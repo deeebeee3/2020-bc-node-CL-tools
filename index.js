@@ -9,6 +9,19 @@ fs.readdir(process.cwd(), (err, filenames) => {
         //throw new Error(err);
     }
 
-    console.log(filenames);
+    //BAD CODE HERE!!!! (callbacks not run immediately, order in which callbacks invoked completely unknown to us)
+    for (let filename of filenames){
+        fs.lstat(filename, (err, stats) => {
+            if(err){
+                console.log(err);
+            }
 
-})
+            console.log(filename, stats.isFile());
+        });
+    }
+    //BAD CODE COMPLETE!!!
+
+    
+
+
+});

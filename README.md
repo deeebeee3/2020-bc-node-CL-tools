@@ -19,3 +19,6 @@ npm link
 
 
 Now able to run nls from anywhere...
+
+Command line:
+which node - shows path where node installed..
