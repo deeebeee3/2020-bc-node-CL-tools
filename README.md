@@ -1,4 +1,8 @@
 Info...
+Create our own implementation of ls command. 
+Make sure sure files listed in correct order everytime.
+
+-------------
 
 Add binary executable key to package.json:
   "bin": {
