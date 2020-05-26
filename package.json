@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/deeebeee3/2020-bootcamp-node-CL-tools/issues"
   },
-  "homepage": "https://github.com/deeebeee3/2020-bootcamp-node-CL-tools#readme"
+  "homepage": "https://github.com/deeebeee3/2020-bootcamp-node-CL-tools#readme",
+  "dependencies": {
+    "chalk": "^4.0.0"
+  }
 }
