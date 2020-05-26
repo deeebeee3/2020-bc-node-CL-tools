@@ -3,6 +3,7 @@
 const fs = require('fs');
 const util = require('util');
 const chalk = require('chalk');
+const path = require('path');
 
 //SOLUTION NUMBER 2
 // const lstat = (filename) => {
@@ -88,7 +89,7 @@ fs.readdir(targetDir, async (err, filenames) => {
     //END NON PROMISE ALL SOLUTION
 
     const statPromises = filenames.map(filename => {
-        return lstat(filename);
+        return lstat(path.join(targetDir, filename));
     });
 
     const allStats = await Promise.all(statPromises);
